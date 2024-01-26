@@ -14,8 +14,8 @@ public class Resto {
 	public static final String [] DRINKS = 		{"boissons" , "eau plate" , "eau gazeuze" , "soda" , "vin","aucune"};
 	public static final String [] DESSERTS = 	{"desserts" , "tarte maison" , "mousse au chocolat" , "tiramisu","aucun"};
 
-	public static ArrayList createMenuClient() {
-		Scanner scan = new Scanner(System.in);
+	public static ArrayList createMenuClient(Scanner scan) {
+		//Scanner scan = new Scanner(System.in);
 		while(scan.hasNextInt() == false);
 		ArrayList<String>  order = new ArrayList<String>();
 		System.out.println("Appuyer sur la touche 1 pour commencer");
