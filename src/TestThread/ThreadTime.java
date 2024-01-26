@@ -32,7 +32,7 @@ public class ThreadTime {
 		      try {
 		        Thread.sleep(delai);
 		        System.out.println(df.format(new Date()));
-		        run();
+		        clearScreen();
 		      } catch (InterruptedException e) {
 		        e.printStackTrace();
 		      }
