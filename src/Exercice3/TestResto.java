@@ -112,11 +112,12 @@ public class TestResto extends Resto {
 			contentCommande += "****** COMMANDE ******\n";
 		}
 		for (int i = 1; i<= numberCommandes; i++) {
-			contentCommande += "Commande numéro: "+i+"\n";
+			contentCommande += "**** Commande numéro: "+i+"****\n";
 			ArrayList<String> commandeClient = createMenuClient(scn);
 			for (String x: commandeClient) {
 				contentCommande += x+"\n";
 			}
+			contentCommande += "\n";
 		}
 		return contentCommande;
 	}
@@ -125,13 +126,6 @@ public class TestResto extends Resto {
 	public static int writeNumber(String instructions, Scanner scn) {
 		boolean reset = true;
 		int x = 0;
-		//x = scn.nextInt();
-		/*while(!scn.hasNextInt()) {
-			System.out.println("veuillez saisir une valeur entière!");
-			scn.next();
-		}
-		System.out.println(x);*/
-		
 		while (reset) {
 			System.out.println(instructions);
 			try {

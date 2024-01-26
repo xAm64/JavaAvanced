@@ -15,10 +15,8 @@ public class Resto {
 	public static final String [] DESSERTS = 	{"desserts" , "tarte maison" , "mousse au chocolat" , "tiramisu","aucun"};
 
 	public static ArrayList createMenuClient(Scanner scan) {
-		//Scanner scan = new Scanner(System.in);
-		while(scan.hasNextInt() == false);
 		ArrayList<String>  order = new ArrayList<String>();
-		System.out.println("Appuyer sur la touche 1 pour commencer");
+		System.out.println("Appuyer sur la touche 1 pour commander");
 		scan.next();
 		int result = getInfos(scan,STARTER[0]);
 		if(STARTER.length-1 > result)	order.add(STARTER[result]);
