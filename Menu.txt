@@ -1,0 +1,35 @@
+****** MENU ******
+******entrée******
+salade
+soupe
+quiche
+aucune
+
+******plats******
+poulet
+boeuf
+poisson
+végétarien
+vegan
+aucun
+
+******accompagnements******
+riz
+pates
+frites
+légumes
+aucun
+
+******boissons******
+eau plate
+eau gazeuze
+soda
+vin
+aucune
+
+******desserts******
+tarte maison
+mousse au chocolat
+tiramisu
+aucun
+
