@@ -56,7 +56,7 @@ public class TestResto extends Resto {
 		
 		try {
 			file = new File(name+".txt");
-			content = new FileOutputStream(file);
+			newFile = new FileOutputStream(file);
 			
 			if (!file.exists()) {
 				file.createNewFile();
@@ -64,9 +64,9 @@ public class TestResto extends Resto {
 			
 			byte[] contentByte = content.getBytes();
 			
-			content.write(contentByte);
-			content.flush();
-			content.close();
+			newFile.write(contentByte);
+			newFile.flush();
+			newFile.close();
 			
 			System.out.println("Opération réussi");
 			
@@ -74,8 +74,8 @@ public class TestResto extends Resto {
 			e.printStackTrace();
 		} finally {
 			try {
-				if (content != null) {
-					content.close();
+				if (newFile != null) {
+					newFile.close();
 				}
 			} catch (IOException e) {
 				e.printStackTrace();
