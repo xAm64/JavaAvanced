@@ -1,22 +1,13 @@
 ****** COMMANDES ******
 **** Commande numéro: 1****
 salade
-poisson
-légumes
-eau plate
-mousse au chocolat
+boeuf
+frites
+tiramisu
 
 **** Commande numéro: 2****
-soupe
-poulet
-pates
-eau plate
-mousse au chocolat
-
-**** Commande numéro: 3****
 quiche
-poulet
-frites
-soda
-tarte maison
+végétarien
+légumes
+eau gazeuze
 
