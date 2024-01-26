@@ -20,7 +20,8 @@ public class TestResto extends Resto {
 		File file;
 		String contenu = printMenu();
 		
-		try {
+		/*
+		 try {
 			file = new File("Menu.txt");
 			menu = new FileOutputStream(file);
 			
@@ -42,6 +43,39 @@ public class TestResto extends Resto {
 			try {
 				if (menu != null) {
 					menu.close();
+				}
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}*/
+	}
+	
+	public void printAll(String content, File name) {
+		FileOutputStream newFile = null;
+		File file;
+		
+		try {
+			file = new File(name+".txt");
+			content = new FileOutputStream(file);
+			
+			if (!file.exists()) {
+				file.createNewFile();
+			}
+			
+			byte[] contentByte = content.getBytes();
+			
+			content.write(contentByte);
+			content.flush();
+			content.close();
+			
+			System.out.println("Opération réussi");
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (content != null) {
+					content.close();
 				}
 			} catch (IOException e) {
 				e.printStackTrace();
@@ -74,16 +108,17 @@ public class TestResto extends Resto {
 	}
 	
 	//Imprimmer la commande
-	/*//Exercice 3 (suite)
-	ArrayList<String> CommandeClient = createMenuClient();
-	FileOutputStream restoTest = null;
-	try {
-	restoTest = new FileOutputStream(new File("Resto.txt"));
-	for (int i = 0; i<)
-	restoTest.write(buf);
-	}catch (Exception e) {
-		System.out.println(e);
+	public static String printCommande() {
+		/*ArrayList<String> CommandeClient = createMenuClient();
+		FileOutputStream restoTest = null;
+		try {
+			restoTest = new FileOutputStream(new File("Resto.txt"));
+			for (int i = 0; i<)
+				restoTest.write(buf);
+		}catch (Exception e) {
+			System.out.println(e);
+		}*/
+		return "Travail en cours";
 	}
-	*/
 
 }
